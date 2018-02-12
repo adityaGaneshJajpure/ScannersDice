@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.developer.aditya.scannersdice.MainActivity">
+
+    <Button
+        android:id="@+id/roll"
+        android:onClick="rollCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+
+        android:layout_alignBaseline="@+id/hold"
+        android:layout_alignBottom="@+id/hold"
+        android:layout_toLeftOf="@+id/dice"
+        android:layout_toStartOf="@+id/dice" />
+
+    <Button
+        android:id="@+id/hold"
+        android:onClick="holdCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold"
+
+        android:layout_alignBaseline="@+id/reset"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/reset"
+        android:onClick="resetCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+
+        android:layout_marginBottom="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/dice"
+        android:layout_toEndOf="@+id/dice"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp" />
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dice1"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/userLabel"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/userLabel"
+        android:layout_width="221dp"
+        android:layout_height="49dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/roll"
+        android:layout_alignStart="@+id/roll"
+        android:layout_marginTop="23dp" />
+
+</RelativeLayout>
