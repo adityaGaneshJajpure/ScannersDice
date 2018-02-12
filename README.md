@@ -1,0 +1,2 @@
+# ScannersDice
+A simple Game ;-)
